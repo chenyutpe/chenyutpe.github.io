@@ -6,8 +6,11 @@
 @theme {
   --color-cosmic-latte: #FFF8E7;
   --color-cosmic-blue: #000718;
+
   --color-organic-green: #a0d4a0;
-  --color-organic-dark: #215028;
+  --color-organic-dark: #83b06c;
+  
+  --color-organic-strong: var(--organic-text-dynamic);
 
   --color-organic-blue: #60a5fa;
   
@@ -21,6 +24,7 @@
 }
 
 :root {
+  --organic-text-dynamic: var(--color-organic-dark);
   --background: var(--color-cosmic-latte);
   --foreground: #27303e;
   /* Lowered from 0.8 to 0.4 for more transparency */
@@ -38,6 +42,7 @@
 }
 
 .dark {
+  --organic-text-dynamic: var(--color-organic-green);
   --background: var(--color-cosmic-blue);
   --foreground: #f1f5f9;
   /* Lowered from 0.8 to 0.4 */
@@ -81,6 +86,8 @@ body {
       @apply text-organic-green;
     }
   }
+
+  /*TODO: Handle the hamburger button transition*/
 
   .social-link {
     color: var(--foreground);
