@@ -19,8 +19,8 @@ export default function PublicationsPage() {
       animate="visible"
       className="max-w-4xl mx-auto px-8 pt-10 pb-20"
     >
-      <motion.header variants={itemVariants} className="mb-16"> {/* Reduced from mb-16 */}
-        <h1 className="text-5xl font-bold tracking-tighter mb-2">Publications</h1>
+      <motion.header variants={itemVariants} className="mb-16">
+        <h1 className="text-6xl font-bold tracking-tighter mb-2">Publications</h1>
       </motion.header>
 
       <div className="space-y-16">
