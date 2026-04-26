@@ -9,7 +9,7 @@
   --color-organic-green: #a0d4a0;
   --color-organic-dark: #215028;
 
-   --color-organic-blue: #60a5fa;
+  --color-organic-blue: #60a5fa;
   
   --animate-cosmic-float: cosmic-float 20s infinite ease-in-out;
 
@@ -72,6 +72,27 @@ body {
 }
 
 @layer components {
+  .navbar-link {
+    color: var(--foreground);
+
+    transition: color 500ms ease;
+
+    &:hover {
+      @apply text-organic-green;
+    }
+  }
+
+  .social-link {
+    color: var(--foreground);
+    opacity: 0.8;
+
+    transition: color 500ms ease;
+
+    &:hover {
+      @apply text-organic-green;
+    }
+  }
+
   .btn-action {
     @apply flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider 
            backdrop-blur-md shadow-sm active:scale-95;
@@ -82,14 +103,14 @@ body {
     color: var(--foreground);
     
     /* Use the 500ms theme-transition */
-    transition: background-color 500ms ease, color 500ms ease, border-color 500ms ease, transform 200ms ease;
-  }
+    transition: background-color 500ms ease, color 500ms ease, border-color 500ms ease, transform 300ms ease;
 
-  .btn-action:hover {
-    background-color: var(--color-organic-green);
-    color: var(--color-cosmic-blue);
-    transform: translateY(-2px);
-    border-color: var(--color-organic-green);
+    &:hover {
+      background-color: var(--color-organic-green);
+      color: var(--color-cosmic-blue);
+      transform: translateY(-2px);
+      border-color: var(--color-organic-green);
+    }
   }
 
   .pub-link {
@@ -100,9 +121,29 @@ body {
     
     /* Sync opacity and color fade to 500ms */
     transition: opacity 500ms ease, color 500ms ease;
-  }
 
-  .pub-link:hover {
-    @apply opacity-100 text-organic-green;
+    &:hover {
+      @apply opacity-100 text-organic-green;
+    }
   }
+  
+  .publication-card {
+    
+    transition: background-color 500ms ease, color 500ms ease, border-color 500ms ease, transform 300ms ease;
+    
+    &:hover {
+      transform: translateX(-0.25rem) translateY(-0.25rem);
+    }
+
+    .card-text {
+      color: var(--foreground);
+      transition: color 500ms ease;
+    }
+    
+    &:hover .card-title {
+      @apply text-organic-green;
+    }
+    
+  }
+  
 }

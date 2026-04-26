@@ -44,11 +44,11 @@ export default function PublicationsPage() {
                     href={pub.doi ? `https://doi.org/${pub.doi}` : "#"} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="group block p-4 -mx-4 my-0 rounded-2xl transition-all duration-500
+                    className="publication-card block p-4 -mx-4 my-0 rounded-2xl
                       hover:bg-black/2 dark:hover:bg-white/3
                       hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)]
                       border border-transparent hover:border-black/5 dark:hover:border-white/10
-                      hover:-translate-x-1"
+                      transition-all duration-500"
                   >
                     <div key={pub.id} className="group flex flex-col sm:flex-row gap-6 md:gap-10 items-start">
                       {/* COMPACT MEDIA THUMBNAIL */}
@@ -63,7 +63,7 @@ export default function PublicationsPage() {
                       )}
 
                       {/* TEXT CONTENT */}
-                      <div className="flex-1 min-w-0 space-y-1">
+                      <div className="card-text flex-1 min-w-0 space-y-1">
                         {/* Venue & Awards */}
                         <div className="flex flex-wrap items-center gap-3 mb-1">
                           <span className="text-[10px] font-bold tracking-widest">
@@ -73,7 +73,7 @@ export default function PublicationsPage() {
                         </div>
 
                         {/* Title */}
-                        <div className="text-md font-bold leading-tight group-hover:text-organic-green theme-transition">
+                        <div className="text-md font-bold leading-tight card-title">
                           {pub.title}
                         </div>
 

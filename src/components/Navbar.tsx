@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
-import { header } from "framer-motion/m";
 
 const navLinks = [
   { name: "About", href: "/about" },
@@ -24,7 +23,7 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="text-sm font-medium hover:text-organic-green transition-colors">
+            <Link key={link.name} href={link.href} className="text-sm font-medium navbar-link">
               {link.name}
             </Link>
           ))}

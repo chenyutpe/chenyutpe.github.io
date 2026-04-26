@@ -1,4 +1,4 @@
-import { Trophy, Medal } from "lucide-react";
+import { Trophy, Award} from "lucide-react";
 import { AwardType } from "@/data/works";
 
 interface FormatAuthorsProps {
@@ -30,7 +30,7 @@ export const AwardBadge = ({ type }: { type: AwardType }) => {
   if (!type || type === 'NONE') return null;
   const config = {
     BEST_PAPER: { icon: Trophy, text: "Best Paper Award", color: "text-amber-600 dark:text-amber-400 bg-amber-500/10 border-amber-500/20" },
-    HONORABLE_MENTION: { icon: Medal, text: "Honorable Mention", color: "text-slate-500 dark:text-slate-400 bg-slate-500/10 border-slate-500/20" }
+    HONORABLE_MENTION: { icon: Award, text: "Honorable Mention", color: "text-slate-500 dark:text-slate-400 bg-slate-500/10 border-slate-500/20" }
   };
   const { icon: Icon, text, color } = config[type];
   return (
