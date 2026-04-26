@@ -139,6 +139,11 @@ body {
       color: var(--foreground);
       transition: color 500ms ease;
     }
+
+    .card-title {
+      color: var(--foreground);
+      transition: color 500ms ease;
+    }
     
     &:hover .card-title {
       @apply text-organic-green;
