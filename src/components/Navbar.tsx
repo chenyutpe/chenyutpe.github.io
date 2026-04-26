@@ -2,18 +2,20 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "About", href: "/about" },
   { name: "Publications", href: "/publications" },
-  { name: "Projects", href: "/projects" },
+  // { name: "Projects", href: "/projects" },
   { name: "CV", href: "/cv" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed top-0 w-full z-50 /* bg-cosmic-latte/40 dark:bg-cosmic-blue/40 backdrop-blur-xl shadow-sm dark:shadow-2xl border-b border-black/5 dark:border-white/5 theme-transition">
@@ -22,11 +24,29 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="text-sm font-medium navbar-link">
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            
+            const isActive = pathname === link.href || pathname?.startsWith(`${link.href}/`);
+            
+            return (
+              <Link 
+                key={link.name} 
+                href={link.href} 
+                className={`text-sm font-medium transition-all duration-300 relative py-1
+                  ${isActive 
+                    ? "text-organic-green opacity-100" 
+                    : "text-foreground/50 hover:text-organic-green"
+                  }`}
+              >
+                {link.name}
+                
+                {/* The Subtle Active Indicator*/}
+                {/* {isActive && (
+                  <span className=" absolute -bottom-1 left-1/2 -translate-x-1/2 w-full h-[2px] rounded-sm bg-organic-green shadow-[0_0_8px_rgba(160,212,160,0.8)]" />
+                )} */}
+              </Link>
+            );
+          })}
           <ThemeToggle />
         </nav>
 
