@@ -1,0 +1,108 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-cosmic-latte: #FFF8E7;
+  --color-cosmic-blue: #000718;
+  --color-organic-green: #a0d4a0;
+  --color-organic-dark: #215028;
+
+   --color-organic-blue: #60a5fa;
+  
+  --animate-cosmic-float: cosmic-float 20s infinite ease-in-out;
+
+  @keyframes cosmic-float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(40px, -60px) scale(1.1); }
+    66% { transform: translate(-30px, 30px) scale(0.9); }
+  }
+}
+
+:root {
+  --background: var(--color-cosmic-latte);
+  --foreground: #27303e;
+  /* Lowered from 0.8 to 0.4 for more transparency */
+  --nav-bg: rgba(255, 248, 231, 0.4); 
+  /* Subtle, soft shadow for Light Mode */
+  --nav-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05); 
+
+  /* Fixed Button Colors for Light Mode */
+  --btn-bg: #fcf4e0; /* A solid color slightly darker than Latte */
+  --btn-border: rgba(0, 0, 0, 0.05);
+
+  /* LIGHT MODE GLOW SETTINGS */
+  --glow-opacity-primary: 0.4;   /* 40% */
+  --glow-opacity-secondary: 0.2; /* 20% */
+}
+
+.dark {
+  --background: var(--color-cosmic-blue);
+  --foreground: #f1f5f9;
+  /* Lowered from 0.8 to 0.4 */
+  --nav-bg: rgba(0, 7, 24, 0.4); 
+  /* Deeper, larger shadow to create depth in Dark Mode */
+  --nav-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5); 
+
+  /* Fixed Button Colors for Dark Mode */
+  --btn-bg: #0a1226; /* A solid color slightly lighter than Cosmic Blue */
+  --btn-border: rgba(255, 255, 255, 0.1);
+
+  --glow-opacity-primary: 0.15;  /* 15% - subtle glow for dark */
+  --glow-opacity-secondary: 0.1;  /* 10% */
+}
+
+/* Define the transition once as a standard CSS rule */
+.theme-transition {
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), 
+              color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),              
+              opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+              transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Apply directly to elements without using @apply */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  /* This ensures the body transitions */
+  transition: background-color 500ms ease, color 500ms ease;
+}
+
+@layer components {
+  .btn-action {
+    @apply flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider 
+           backdrop-blur-md shadow-sm active:scale-95;
+    
+    /* Manual CSS for perfect sync */
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--foreground);
+    
+    /* Use the 500ms theme-transition */
+    transition: background-color 500ms ease, color 500ms ease, border-color 500ms ease, transform 200ms ease;
+  }
+
+  .btn-action:hover {
+    background-color: var(--color-organic-green);
+    color: var(--color-cosmic-blue);
+    transform: translateY(-2px);
+    border-color: var(--color-organic-green);
+  }
+
+  .pub-link {
+    @apply flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-tighter;
+    
+    color: var(--foreground);
+    opacity: 0.4;
+    
+    /* Sync opacity and color fade to 500ms */
+    transition: opacity 500ms ease, color 500ms ease;
+  }
+
+  .pub-link:hover {
+    @apply opacity-100 text-organic-green;
+  }
+}
