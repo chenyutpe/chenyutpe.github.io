@@ -23,7 +23,7 @@ export default function AboutPage() {
               I consider myself a <span className="text-organic-strong font-bold">meticulous observer</span> and a <span className="text-organic-strong font-bold">critical thinker</span>, and have found that this sensitivity allows me to identify nuances that others might overlook.
             </p>
             <p>
-              This approach drove my academic research. Alongside contributing to nine publications across top HCI venues (CHI, UIST, DIS, and MobileHCI) with two Honorable Mention Awards, Most recently, I received a <span className="text-organic-strong font-bold">Best Paper Award at CHI 2026</span> for my debut first-author work.
+              This approach drove my academic research. Alongside contributing to nine publications across top HCI venues (CHI, UIST, DIS, and MobileHCI) and earning two Honorable Mention Awards, I recently received a <span className="text-organic-strong font-bold">Best Paper Award at CHI 2026</span> for my debut first-author work.
             </p>
           </div>
         </motion.div>
