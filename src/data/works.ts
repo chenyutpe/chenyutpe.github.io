@@ -84,8 +84,8 @@ export const allPublications: PublicationItem[] = [
     venue: "UIST '25 Paper",
     authors: "Wen-Fan Wang, Ting-Ying Lee, Chien-Ting Lu, Che-Wei Hsu, Nil Ponsa Campanyà, Yu Chen, Mike Y. Chen, Bing-Yu Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_09.png",
-    mediaType: 'image',
+    mediaUrl: "/works/publication_09.mp4",
+    mediaType: 'video',
     doi: "10.1145/3746059.3747774"
   },
   {
@@ -96,8 +96,8 @@ export const allPublications: PublicationItem[] = [
     venue: "CHI '25 Paper",
     authors: "En-Huei Wu, Po-Yun Cheng, Che-Wei Hsu, Cheng Hsin Han, Pei Chen Lee, Chia-An Fan, Yu Chia Kuo, Kai-Jing Hu, Yu Chen, Mike Y. Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_08.png",
-    mediaType: 'image',
+    mediaUrl: "/works/publication_08.mp4",
+    mediaType: 'video',
     doi: "10.1145/3706598.3714214"
   },
   {
@@ -108,8 +108,8 @@ export const allPublications: PublicationItem[] = [
     venue: "UIST '24 Paper",
     authors: "Chia-An Fan, En-Huei Wu, Chia-Yu Cheng, Yu-Cheng Chang, Alvaro Lopez, Yu Chen, Chia-Chen Chi, Yi-Sheng Chan, Ching-Yi Tsai, Mike Y. Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_07.png",
-    mediaType: 'image',
+    mediaUrl: "/works/publication_07.mp4",
+    mediaType: 'video',
     doi: "10.1145/3654777.3676433"
   },
   {
@@ -157,8 +157,8 @@ export const allPublications: PublicationItem[] = [
     venue: "CHI '24 Paper",
     authors: "Chia-Yu Cheng, Yu Chen, Sitaresmi Wahyu Handani, Avijit Balabantaray, Mike Y. Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_03.png",
-    mediaType: 'image',
+    mediaUrl: "/works/publication_03.mp4",
+    mediaType: 'video',
     doi: "10.1145/3613904.3642841"
   },
   {
