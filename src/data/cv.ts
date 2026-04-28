@@ -16,7 +16,10 @@ export const education = [
     institution: "National Taiwan University",
     location: "Taipei, Taiwan",
     date: "Sep 2018 — Jun 2022",
-    details: ["Honors: Dean’s List (2x)"]
+    details: [
+      "Honors: Dean’s List (2x)",
+      "Activities: Digital Music Composition Club - President (2019-2021)"
+    ]
   }
 ];
 
