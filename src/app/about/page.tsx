@@ -20,22 +20,18 @@ export default function AboutPage() {
               I am a Master's graduate in Computer Science from National Taiwan University (CSIE), with a focus on Human-Computer Interaction (HCI) and Creative Technology.
             </p>
             <p>
-              Over my academic career, I contributed to nine publications across top HCI venues—including CHI, UIST, DIS, and MobileHCI—earning two Honorable Mention Awards along the way. Most recently, this focus culminated in a <span className="text-organic-strong font-bold">Best Paper Award at CHI 2026</span> for my debut first-author work.
+              I consider myself a <span className="text-organic-strong font-bold">meticulous observer</span> and a <span className="text-organic-strong font-bold">critical thinker</span>, and have found that this sensitivity allows me to identify nuances that others might overlook.
             </p>
             <p>
-                
-            </p>
-            <p>
-                
+              This approach drove my academic research. Alongside contributing to nine publications across top HCI venues (CHI, UIST, DIS, and MobileHCI) with two Honorable Mention Awards, Most recently, I received a <span className="text-organic-strong font-bold">Best Paper Award at CHI 2026</span> for my debut first-author work.
             </p>
           </div>
         </motion.div>
 
         <motion.div variants={itemVariants} className="md:col-span-2">
           {/* Placeholder for an informal photo (e.g., at a conference or lab) */}
-          <div className="aspect-[4/5] relative rounded-2xl overflow-hidden border border-black/5 dark:border-white/10 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 bg-slate-200 dark:bg-slate-800">
-             {/* <Image src="/about-photo.jpg" alt="Yu Chen at Lab" fill className="object-cover" /> */}
-             <div className="absolute inset-0 flex items-center justify-center text-xs opacity-20 italic">Photo Placeholder</div>
+          <div className="aspect-4/5 relative rounded-2xl overflow-hidden border border-black/5 dark:border-white/10 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 bg-slate-200 dark:bg-slate-800">
+             <Image src="/CHI_PHOTO_LOGO.jpg" alt="Yu Chen at CHI 2026" fill className="object-cover" />
           </div>
         </motion.div>
       </section>

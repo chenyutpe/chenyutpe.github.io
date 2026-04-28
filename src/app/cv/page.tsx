@@ -62,7 +62,7 @@ export default function CVPage() {
             {professionalExperience.map((exp) => (
               <motion.div key={exp.id} variants={itemVariants} className="relative pl-8">
                 {/* Timeline Dot */}
-                <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-organic-green shadow-[0_0_10px_rgba(160,212,160,0.5)]" />
+                <div className="absolute -left-1.25 top-2 w-2.5 h-2.5 rounded-full bg-organic-green shadow-[0_0_10px_rgba(160,212,160,0.5)]" />
                 
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-1 mb-2">
                   <h3 className="text-xl font-bold">{exp.role}</h3>
