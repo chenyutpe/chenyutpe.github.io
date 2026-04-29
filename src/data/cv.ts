@@ -61,7 +61,7 @@ export const professionalExperience = [
     id: 1,
     role: "Organizer",
     company: "Pre-CHI Workshop",
-    date: "Jul 2023 — Aug 2023",
+    date: "Jul 2022 — Aug 2022",
     description: [
       "Organized a cross-university workshop, facilitating research collaboration among Taiwan’s leading HCI labs and providing structured peer review for students aiming for ACM CHI submissions."
     ]
