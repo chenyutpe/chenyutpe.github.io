@@ -52,7 +52,7 @@ export const professionalExperience = [
     id: 2,
     role: "Teaching Assistant",
     company: "National Taiwan University [VR Game Programming]",
-    date: "Feb 2025 — Jun 2025",
+    date: "Sep 2022 — Jan 2023",
     description: [
         "Developed introductory Unity course materials and delivered lectures; the curriculum was subsequently adopted as the standard teaching resource for following years."
     ]
