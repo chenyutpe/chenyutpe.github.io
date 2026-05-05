@@ -1,7 +1,7 @@
 "use client";
 import { featuredWorks } from "@/data/works";
 import { FileText, Video, Link as LinkIcon } from "lucide-react";
-import { FormatAuthors, AwardBadge } from "./academic/ProjectUtils";
+import { FormatAuthors, AwardBadge, formatDate } from "./academic/ProjectUtils";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animations";
 
@@ -38,7 +38,7 @@ export default function FeaturedWork() {
                 {p.type === 'publication' ? (
                   ""
                 ) : (
-                  <span className="text-xs opacity-50 italic">{p.startDate} — {p.endDate}</span>
+                  <span className="text-xs opacity-50 italic">{formatDate(p.startDate)} — {formatDate(p.endDate)}</span>
                 )}
                 <AwardBadge type={p.awardType || 'NONE'} />
               </div>

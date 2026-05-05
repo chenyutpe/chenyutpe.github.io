@@ -39,3 +39,16 @@ export const AwardBadge = ({ type }: { type: AwardType }) => {
     </span>
   );
 };
+
+export const formatDate = (dateStr: string) => {
+  if (!dateStr || dateStr === "Present") return "Present";
+  
+  const [year, month] = dateStr.split("-");
+  const monthNames = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  ];
+  
+  const monthIndex = parseInt(month, 10) - 1;
+  return `${monthNames[monthIndex]} ${year}`;
+};

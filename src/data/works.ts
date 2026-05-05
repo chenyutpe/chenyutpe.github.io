@@ -49,7 +49,7 @@ export const featuredWorks: WorkItem[] = [
   {
     id: "project_1",
     type: 'project',
-    startDate: "2025-09",
+    startDate: "2025-08",
     endDate: "2026-03",
     title: "Birdsong of the Island",
     venue: "IU-Taiwan Music Project: Resonant Island",
