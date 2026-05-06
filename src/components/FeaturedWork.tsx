@@ -53,14 +53,14 @@ export default function FeaturedWork() {
               <div className="flex flex-wrap gap-3">
                 {p.type === 'publication' && p.doi && (
                   <a href={`https://doi.org/${p.doi}`} target="_blank" rel="noopener noreferrer" className="btn-action">
-                    <FileText size={14} /> Paper
+                    <FileText size={14} /> DOI
                   </a>
                 )}                
-                {p.videoUrl && (
+                {/* {p.videoUrl && (
                   <a href={p.videoUrl} target="_blank" rel="noopener noreferrer" className="btn-action">
                     <Video size={14} /> Video
                   </a>
-                )}
+                )} */}
                 {p.externalUrl && (
                   <a href={p.externalUrl.url} target="_blank" rel="noopener noreferrer" className="btn-action">
                     <LinkIcon size={14} /> {p.externalUrl.label}
