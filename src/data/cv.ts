@@ -17,7 +17,7 @@ export const education = [
     location: "Taipei, Taiwan",
     date: "Sep 2018 — Jun 2022",
     details: [
-      "Honors: Dean’s List (2x)",
+      "Honors: Dean’s List Award(2x)",
       "Activities: Digital Music Composition Club - President (2019-2021)"
     ]
   }
@@ -44,7 +44,7 @@ export const professionalExperience = [
     company: "National Taiwan University [Advanced Human-Computer Interaction]",
     date: "Feb 2025 — Jun 2025",
     description: [
-        "Assisted the instructor with course materials and mentored student groups throughout the formulation of research proposals.",
+        "Mentored student groups on research proposals and assisted in curriculum development.",
         "Served as a guest lecturer on short notice, designing a session on \"Figures and Study Design.\" Deconstructed lab publications and award-winning papers to synthesize visualization best practices and codify standard research methodologies."
     ]
   },
@@ -63,13 +63,29 @@ export const professionalExperience = [
     company: "Pre-CHI Workshop",
     date: "Jul 2022 — Aug 2022",
     description: [
-      "Organized a cross-university workshop, facilitating research collaboration among Taiwan’s leading HCI labs and providing structured peer review for students aiming for ACM CHI submissions."
+      "Organized a cross-university workshop to foster cross-lab collaboration, and to provide early feedback for students aiming for ACM CHI submissions."
     ]
   }
 ];
 
 export const skillCategories = [
-  { name: "Languages", skills: ["Mandarin (Native)", "English (Fluent)", "Japanese (Fluent)"] },
-  { name: "Development", skills: ["Unity (C#)", "Web", "XR (VR/AR/MR)", "iOS", "Android"] },
-  { name: "Research", skills: ["User Studies (Quant/Qual)", "Field Deployment"] }
+  { name: "Development", skills: [
+    "Web (React/Next.js/FastAPI)",
+    "XR (Unity)",
+    "Game (Unity)",
+    "Mobile (Unity/Flutter)",
+  ] },
+  { name: "Creative", skills: [
+    "UI/UX",
+    "Visual Design",
+    "Digital Painting",
+    "Sound Design",    
+    "3D Modeling",
+  ] },  
+  { name: "Research", skills: [
+    "User Studies (Quant/Qual)", 
+    "Field Deployment", 
+    "Figure Design",
+    "Data Analysis (Quant/Qual)"
+  ] }
 ];
