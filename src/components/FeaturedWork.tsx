@@ -1,6 +1,6 @@
 "use client";
 import { featuredWorks } from "@/data/works";
-import { FileText, Video, Link as LinkIcon } from "lucide-react";
+import { Volume2, FileText, Video, Link as LinkIcon } from "lucide-react";
 import { FormatAuthors, AwardBadge, formatDate } from "./academic/ProjectUtils";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animations";
@@ -14,8 +14,12 @@ export default function FeaturedWork() {
       viewport={{ once: true, margin: "-100px" }}
       className="max-w-5xl mx-auto px-8 pb-32"
     >
-      <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-bold tracking-tighter mb-16">Featured Work</motion.h2>
-      
+      <motion.h2 
+        variants={itemVariants}
+        className="text-4xl md:text-6xl font-bold tracking-tighter mb-16">
+          Featured Works
+      </motion.h2>
+
       <div className="flex flex-col gap-28">
         {featuredWorks.map((p) => (
           <motion.div key={p.id} variants={itemVariants} className="flex flex-col lg:flex-row gap-12 items-start group">
