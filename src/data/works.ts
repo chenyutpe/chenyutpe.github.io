@@ -3,6 +3,7 @@ export type AwardType = 'BEST_PAPER' | 'HONORABLE_MENTION' | 'NONE';
 // The shared properties all items have
 interface BaseWorkItem {
   id: string;
+  slug?: string; // Optional slug for URL paths
   title: string;
   authors: string;
   description: string;
@@ -34,6 +35,7 @@ export type WorkItem = PublicationItem | ProjectItem;
 export const featuredWorks: WorkItem[] = [
   {
     id: "publication_10",
+    slug: "reacquainting-with-everyday-urban-nature",
     type: 'publication',
     date: "2026-04-13",
     title: "Reacquainting with Everyday Urban Nature: Exploring Natural Soundscape Restoration with Personal Audio AR",
@@ -48,6 +50,7 @@ export const featuredWorks: WorkItem[] = [
   },
   {
     id: "project_1",
+    slug: "birdsong-of-the-island",
     type: 'project',
     startDate: "2025-08",
     endDate: "2026-03",

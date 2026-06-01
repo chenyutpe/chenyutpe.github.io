@@ -32,8 +32,8 @@ export default function Hero() {
         </div>
         
         <div className="max-w-xl text-sm md:text-base leading-relaxed opacity-70 font-light space-y-3">
-          <p>I am a recent Master&apos;s graduate in Computer Science from National Taiwan University (CSIE), with a focus on Human-Computer Interaction (HCI) and Creative Technology.</p>
-          <p>I consider myself a meticulous observer and a critical thinker, and have found that this sensitivity allows me to identify nuances that others might overlook.</p>
+          <p>I am a CS Master&apos;s graduate from National Taiwan University, specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).</p>
+          <p>As a meticulous observer and critical thinker, I leverage this sensitivity to identify nuances that others might overlook.</p>
         </div>
 
         <div className="flex gap-6 pt-2 justify-center md:justify-start">
