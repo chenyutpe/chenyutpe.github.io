@@ -9,10 +9,10 @@ export default function AboutPage() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="max-w-4xl mx-auto px-8 pt-32 pb-20"
+      className="max-w-4xl mx-auto px-8 pt-26 pb-20"
     >
       {/* TOP SECTION: BIO & PHOTO */}
-      <section className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
+      <section className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-24">
         {/* TEXT SIDE */}
         <motion.div variants={itemVariants} className="md:col-span-3 space-y-6">
           <h1 className="text-5xl font-bold tracking-tighter">Hi, I&apos;m <span className="text-organic-strong">Yu Chen.</span></h1>
