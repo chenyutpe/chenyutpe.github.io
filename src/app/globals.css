@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+  scrollbar-gutter: stable;
+}
+
 @theme {
   --color-cosmic-latte: #FFF8E7;
   --color-cosmic-blue: #000718;
