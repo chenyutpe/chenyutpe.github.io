@@ -30,22 +30,22 @@ export default function CVPage() {
         
         {/* EDUCATION SECTION */}
         <section>
-          <motion.h2 variants={itemVariants} className="text-xs font-bold uppercase tracking-[0.3em] text-organic-green mb-10">Education</motion.h2>
+          <motion.h2 variants={itemVariants} className="text-xs font-bold uppercase tracking-[0.3em] text-organic-strong mb-10">Education</motion.h2>
           <div className="space-y-12">
             {education.map((edu) => (
               <motion.div key={edu.id} variants={itemVariants} className="group">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-1 mb-2">
                   <h3 className="text-2xl font-bold">{edu.degree}</h3>
-                  <span className="text-sm font-medium opacity-40">{edu.date}</span>
+                  <span className="text-sm font-medium text-foreground/75">{edu.date}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm opacity-60 mb-4">
+                <div className="flex items-center gap-2 text-sm text-foreground/80 mb-4">
                   <span className="font-semibold">{edu.institution}</span>
                   <span>·</span>
                   <span>{edu.location}</span>
                 </div>
                 <ul className="space-y-2">
                   {edu.details.map((detail, i) => (
-                    <li key={i} className="text-sm opacity-70 font-light leading-relaxed border-l-2 border-organic-green/20 pl-4">
+                    <li key={i} className="text-sm text-foreground/80 font-light leading-relaxed border-l-2 border-organic-green/14 pl-4">
                       {detail}
                     </li>
                   ))}
@@ -57,8 +57,8 @@ export default function CVPage() {
 
         {/* EXPERIENCE SECTION */}
         <section>
-          <motion.h2 variants={itemVariants} className="text-xs font-bold uppercase tracking-[0.3em] text-organic-green mb-10">Research & Professional Experience</motion.h2>
-          <div className="space-y-12 border-l border-foreground/5 ml-1">
+          <motion.h2 variants={itemVariants} className="text-xs font-bold uppercase tracking-[0.3em] text-organic-strong mb-10">Research & Professional Experience</motion.h2>
+          <div className="space-y-12 border-l border-foreground ml-1">
             {professionalExperience.map((exp) => (
               <motion.div key={exp.id} variants={itemVariants} className="relative pl-8">
                 {/* Timeline Dot */}
@@ -66,12 +66,12 @@ export default function CVPage() {
                 
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-1 mb-2">
                   <h3 className="text-xl font-bold">{exp.role}</h3>
-                  <span className="text-sm font-medium opacity-40">{exp.date}</span>
+                  <span className="text-sm font-medium text-foreground/75">{exp.date}</span>
                 </div>
-                <div className="text-sm font-semibold opacity-60 mb-4">{exp.company}</div>
+                <div className="text-sm font-semibold text-foreground/80 mb-4">{exp.company}</div>
                 <ul className="space-y-2">
                   {exp.description.map((desc, i) => (
-                    <li key={i} className="text-sm opacity-70 font-light leading-relaxed">
+                    <li key={i} className="text-sm text-foreground/80 font-light leading-relaxed">
                       • {desc}
                     </li>
                   ))}
@@ -83,11 +83,11 @@ export default function CVPage() {
 
         {/* SKILLS SECTION */}
         <section>
-          <motion.h2 variants={itemVariants} className="text-xs font-bold uppercase tracking-[0.3em] text-organic-green mb-10">Skills</motion.h2>
+          <motion.h2 variants={itemVariants} className="text-xs font-bold uppercase tracking-[0.3em] text-organic-strong mb-10">Skills</motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {skillCategories.map((category) => (
               <motion.div key={category.name} variants={itemVariants}>
-                <h4 className="text-xs font-bold uppercase opacity-30 mb-4 tracking-widest">{category.name}</h4>
+                <h4 className="text-xs font-bold uppercase text-foreground/75 mb-4 tracking-widest">{category.name}</h4>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
                     <span 
@@ -95,7 +95,7 @@ export default function CVPage() {
                       className="px-3 py-1 rounded-md 
                                 bg-organic-green/10 dark:bg-organic-green/10 
                                 border border-organic-green/20 
-                                text-[11px] font-medium text-foreground/70"
+                                text-[11px] font-medium text-foreground"
                     >
                       {skill}
                     </span>

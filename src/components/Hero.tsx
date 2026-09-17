@@ -28,10 +28,10 @@ export default function Hero() {
       <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="flex-1 text-center md:text-left space-y-4">
         <div>
           <h1 className="text-6xl font-bold tracking-tighter pb-1.5">Yu Chen</h1>
-          <p className="text-lg font-medium tracking-widest uppercase text-organic-green">HCI & XR | Creative Technology</p>
+          <p className="text-lg font-medium tracking-widest uppercase text-organic-strong">HCI & XR | Creative Technology</p>
         </div>
         
-        <div className="max-w-xl text-sm md:text-base leading-relaxed opacity-70 font-light space-y-3">
+        <div className="max-w-xl text-sm md:text-base leading-relaxed text-foreground/80 font-light space-y-3">
           <p>I am a CS Master&apos;s graduate from National Taiwan University, specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).</p>
           <p>As a meticulous observer and critical thinker, I leverage this sensitivity to identify nuances that others might overlook.</p>
         </div>

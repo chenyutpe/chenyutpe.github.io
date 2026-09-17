@@ -41,10 +41,10 @@ export default function AboutPage() {
         variants={itemVariants} 
         className="max-w-3xl mx-auto text-center flex flex-col gap-3 md:gap-4"
       >
-        <h2 className="text-2xl md:text-3xl font-light text-foreground/90 tracking-tight">
+        <h2 className="text-2xl md:text-3xl font-light text-foreground tracking-tight">
           My goal is to create <span className="font-semibold text-organic-strong">meaningful and reflective interactions</span>
         </h2>
-        <p className="text-base md:text-lg font-light text-foreground/50 tracking-wide">
+        <p className="text-base md:text-lg font-light text-foreground/80 tracking-wide">
           Experiences that endure despite the rapid cycles of emerging technology.
         </p>
       </motion.section>

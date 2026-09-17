@@ -35,8 +35,8 @@ export default function Navbar() {
                 href={link.href} 
                 className={`navbar-link text-sm font-medium relative py-1
                   ${isActive 
-                    ? "text-organic-green opacity-100" 
-                    : "text-foreground/50 hover:text-organic-green"
+                    ? "text-organic-strong opacity-100"
+                    : "text-foreground hover:text-organic-strong"
                   }`}
               >
                 {link.name}
@@ -56,7 +56,7 @@ export default function Navbar() {
           <ThemeToggle />
           <button 
             onClick={() => setIsOpen(!isOpen)} 
-            className="p-2 text-foreground/70 hover:text-organic-strong rounded-full hover:bg-black/5 dark:hover:bg-white/10 active:scale-90"
+            className="p-2 text-foreground hover:text-organic-strong rounded-full hover:bg-black/5 dark:hover:bg-white/10 active:scale-90"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -83,8 +83,8 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)} 
                     className={`navbar-link text-2xl font-bold tracking-tight transition-colors flex items-center justify-between
                       ${isActive 
-                      ? "text-organic-green opacity-100" 
-                      : "text-foreground/50 hover:text-organic-green"
+                      ? "text-organic-strong opacity-100"
+                      : "text-foreground hover:text-organic-strong"
                     }`}
                   >
                     {link.name}

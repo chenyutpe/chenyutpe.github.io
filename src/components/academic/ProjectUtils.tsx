@@ -17,7 +17,7 @@ export const FormatAuthors = ({ authors, textSize = "sm" }: FormatAuthorsProps) 
             Yu Chen
           </strong>
         ) : (
-          <span key={i} className="opacity-50">
+          <span key={i} className="text-foreground/60">
             {part}
           </span>
         )

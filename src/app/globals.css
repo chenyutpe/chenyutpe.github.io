@@ -27,6 +27,10 @@ html {
   }
 }
 
+@theme inline {
+  --color-foreground: var(--foreground);
+}
+
 :root {
   --organic-text-dynamic: var(--color-organic-dark);
   --background: var(--color-cosmic-latte);
@@ -87,7 +91,7 @@ body {
     transition: color 500ms ease;
 
     &:hover {
-      @apply text-organic-green;
+      @apply text-organic-strong;
     }
   }
 
@@ -100,7 +104,7 @@ body {
     transition: color 500ms ease;
 
     &:hover {
-      @apply text-organic-green;
+      @apply text-organic-strong;
     }
   }
 
@@ -134,7 +138,7 @@ body {
     transition: opacity 500ms ease, color 500ms ease;
 
     &:hover {
-      @apply opacity-100 text-organic-green;
+      @apply opacity-100 text-organic-strong;
     }
   }
   
@@ -157,7 +161,7 @@ body {
     }
     
     &:hover .card-title {
-      @apply text-organic-green;
+      @apply text-organic-strong;
     }
     
   }
