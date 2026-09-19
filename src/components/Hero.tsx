@@ -28,7 +28,7 @@ export default function Hero() {
       <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="flex-1 text-center md:text-left space-y-4">
         <div>
           <h1 className="text-6xl font-bold tracking-tighter pb-1.5">Yu Chen</h1>
-          <p className="text-lg font-medium tracking-widest uppercase text-organic-strong">HCI & XR | Creative Technology</p>
+          <p className="text-lg font-medium tracking-widest uppercase text-organic-green">HCI & XR | Creative Technology</p>
         </div>
         
         <div className="max-w-xl text-sm md:text-base leading-relaxed text-foreground/80 font-light space-y-3">
