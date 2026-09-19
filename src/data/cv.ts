@@ -25,6 +25,16 @@ export const education = [
 
 export const professionalExperience = [
   {
+    id: 6,
+    role: "Research Assistant",
+    company: "National Taiwan University (HCI Lab)",
+    date: "Jul 2026 — Sep 2026",
+    description: [
+      "Mentored junior lab members and contributed to ongoing HCI research, including three CHI submissions.",
+      "Developed an HCI paper-writing guide and an Overleaf LaTeX paper template for junior researchers. Synthesized lab practices, external writing resources, and personal research-writing experience into practical guidance on paper structure, research argumentation, and academic writing."
+    ]
+  },
+  {
     id: 5,
     role: "Mandatory National Service (Conscript)",
     company: "Republic of China (Taiwan) Army",
