@@ -34,9 +34,9 @@ export default function CVPage() {
           <div className="space-y-12">
             {education.map((edu) => (
               <motion.div key={edu.id} variants={itemVariants} className="group">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-1 mb-2">
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-baseline gap-y-1 gap-x-6 mb-2">
                   <h3 className="text-2xl font-bold">{edu.degree}</h3>
-                  <span className="text-sm font-medium text-foreground/75">{edu.date}</span>
+                  <span className="shrink-0 whitespace-nowrap text-sm font-medium text-foreground/75">{edu.date}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-foreground/80 mb-4">
                   <span className="font-semibold">{edu.institution}</span>
@@ -64,9 +64,9 @@ export default function CVPage() {
                 {/* Timeline Dot */}
                 <div className="absolute -left-1.25 top-2 w-2.5 h-2.5 rounded-full bg-organic-green shadow-[0_0_10px_rgba(160,212,160,0.5)]" />
                 
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-1 mb-2">
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-baseline gap-y-1 gap-x-6 mb-2">
                   <h3 className="text-xl font-bold">{exp.role}</h3>
-                  <span className="text-sm font-medium text-foreground/75">{exp.date}</span>
+                  <span className="shrink-0 whitespace-nowrap text-sm font-medium text-foreground/75">{exp.date}</span>
                 </div>
                 <div className="text-sm font-semibold text-foreground/80 mb-4">{exp.company}</div>
                 <ul className="space-y-2">
