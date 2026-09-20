@@ -30,6 +30,12 @@ Green accents appear in active navigation, featured-work type labels, publicatio
 
 Light-mode green remains low contrast, particularly for small labels. The pale tagline intentionally favors its softer appearance. These choices do not establish accessibility compliance; small green labels remain a candidate for a separate improvement. Reconsider them through an actual visual comparison rather than silently darkening every accent.
 
+## Typography
+
+- Use Inter throughout the site for a consistent typeface across devices. Keep existing sizes, weights, spacing, and animations; review wrapping when changing typography.
+- Apply the existing `next/font/google` Inter class to the body. Next.js serves the generated font assets with the static site; the build still needs access to Google Fonts.
+- Use Inter in the sharing image as well for a consistent identity.
+
 ## Text hierarchy
 
 Choose emphasis according to what the reader needs to notice. Opacity is not a universal ranking applied identically to every page.
@@ -65,6 +71,20 @@ These are role-specific decisions, not instructions to apply opacity suffixes in
 - Give icon-only links and buttons accessible names without adding visible text beside them.
 - Expose the mobile navigation's expanded state and current-page links. Escape closes the mobile navigation and returns focus to its button.
 - Use a foreground-colored focus outline for keyboard navigation so it remains visible in both themes without changing the green palette.
+
+## Page metadata and sharing
+
+- Keep site defaults and the metadata helper in `src/lib/metadata.ts`; put each page's title, description, and canonical path in its route layout. Server layouts supply metadata while existing client pages retain their animations.
+- Use `Yu Chen` for the home title and `Page | Yu Chen` for other pages to identify browser tabs and shared links clearly.
+- Share one 1200 × 630 preview image with a cream background (`#FFF8E7`), pale-green and blue glows, dark name and URL, and a green tagline (`#83b06c`). This preserves the warm identity while making the tagline clearer than pale green at thumbnail sizes.
+- Set the sharing-image tagline in Inter at 44 px, regular weight, mixed case, and 1 px letter spacing. Judge it separately from the homepage's pale-green uppercase tagline because the image scales down as a whole. `public/social-preview.svg` is the editable source; regenerate `public/social-preview.png` when changing it.
+- Update metadata when a page's purpose changes. Future project metadata should reuse project content rather than duplicate descriptions. Ordinary CV edits do not require metadata changes.
+
+To regenerate the sharing image from the repository root (using Sharp installed with Next.js), ensure Inter is available to the SVG renderer through Fontconfig first. Otherwise it may silently use a fallback. Use an installed Inter font or set `FONTCONFIG_FILE` to a configuration that includes its directory, then inspect the generated image.
+
+```sh
+node -e "require('sharp')('public/social-preview.svg').png().toFile('public/social-preview.png')"
+```
 
 ## Future directions and open questions
 

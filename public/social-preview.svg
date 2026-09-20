@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="green">
+      <stop stop-color="#a0d4a0" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#a0d4a0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blue">
+      <stop stop-color="#60a5fa" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#FFF8E7"/>
+  <ellipse cx="120" cy="110" rx="620" ry="520" fill="url(#green)"/>
+  <ellipse cx="1120" cy="610" rx="550" ry="480" fill="url(#blue)"/>
+  <g font-family="Inter, sans-serif">
+    <text x="96" y="300" fill="#27303e" font-size="100" font-weight="700" letter-spacing="-4">Yu Chen</text>
+    <text x="100" y="375" fill="#83b06c" font-size="44" letter-spacing="1">HCI &amp; XR | Creative Technology</text>
+    <text x="100" y="550" fill="#27303e" fill-opacity=".8" font-size="25">chenyutpe.github.io</text>
+  </g>
+</svg>

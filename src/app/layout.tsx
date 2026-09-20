@@ -3,18 +3,20 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import Navbar from "@/components/Navbar";
+import { pageMetadata, siteDescription, siteUrl } from "@/lib/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yu Chen",
-  description: "Personal Website of Yu Chen",
+  ...pageMetadata("Yu Chen", siteDescription, "/"),
+  metadataBase: new URL(siteUrl),
+  title: { default: "Yu Chen", template: "%s | Yu Chen" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="relative min-h-screen overflow-x-hidden" suppressHydrationWarning>
+      <body className={`${inter.className} relative min-h-screen overflow-x-hidden`} suppressHydrationWarning>
         <Providers>
           {/* ENHANCED LEAN BACKGROUND - VARIABLE DRIVEN */}
           <div className="fixed inset-0 pointer-events-none -z-1" aria-hidden="true">
