@@ -18,7 +18,7 @@ export default function AboutPage() {
           <h1 className="text-5xl font-bold tracking-tighter">Hi, I&apos;m <span className="text-organic-strong">Yu Chen.</span></h1>
           <div className="text-lg opacity-80 leading-relaxed space-y-4 font-light">
             <p>
-              I am a Master's graduate in Computer Science from National Taiwan University (CSIE), specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).
+              I am a Master&apos;s graduate in Computer Science from National Taiwan University (CSIE), specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).
             </p>
             <p>
               I consider myself a <span className="text-organic-strong font-bold">meticulous observer</span> and a <span className="text-organic-strong font-bold">critical thinker</span>. This mindset allows me to identify nuances that others might overlook.

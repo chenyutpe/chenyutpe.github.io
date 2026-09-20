@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { allPublications} from "@/data/works";
 import { FormatAuthors, AwardBadge } from "@/components/academic/ProjectUtils";
 import { containerVariants, itemVariants } from "@/lib/animations";

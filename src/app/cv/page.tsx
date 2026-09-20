@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { education, professionalExperience, skillCategories } from "@/data/cv";
 import { containerVariants, itemVariants } from "@/lib/animations";
-import { FileText, MapPin, Calendar } from "lucide-react";
 
 export default function CVPage() {
   return (
