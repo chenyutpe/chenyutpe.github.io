@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { allPublications} from "@/data/works";
 import { FormatAuthors, AwardBadge } from "@/components/academic/ProjectUtils";
 import { containerVariants, itemVariants } from "@/lib/animations";
+import PreviewVideo from "@/components/PreviewVideo";
 
 // Using Month-based grouping
 const getYear = (dateStr: string) => dateStr.split('-')[0];
@@ -55,7 +56,7 @@ export default function PublicationsPage() {
                       {pub.mediaUrl && (
                         <div className="w-60 md:w-48 aspect-auto self-start shrink-0 rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-sm">
                           {pub.mediaType === 'video' ? (
-                            <video src={pub.mediaUrl} autoPlay loop muted playsInline className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                            <PreviewVideo src={pub.mediaUrl} label={`Preview of ${pub.title}`} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                           ) : (
                             <img src={pub.mediaUrl} alt={pub.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                           )}

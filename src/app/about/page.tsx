@@ -29,7 +29,7 @@ export default function AboutPage() {
 
         {/* PHOTO SIDE */}
         <motion.div variants={itemVariants} className="md:col-span-2">
-          <div className="aspect-4/5 relative rounded-2xl overflow-hidden border border-black/5 dark:border-white/10 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 bg-slate-200 dark:bg-slate-800">
+          <div className="aspect-4/5 relative rounded-2xl overflow-hidden border border-black/5 dark:border-white/10 shadow-2xl rotate-2 hover:rotate-0 motion-reduce:rotate-0 transition-transform duration-500 bg-slate-200 dark:bg-slate-800">
              <Image src="/CHI_PHOTO_LOGO.jpg" alt="Yu Chen at CHI 2026" fill className="object-cover" />
           </div>
         </motion.div>

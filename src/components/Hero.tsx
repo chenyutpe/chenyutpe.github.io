@@ -6,10 +6,10 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiGooglescholar, SiGithub } from "react-icons/si";
 
 const socials = [
-  { icon: MdEmail, href: "mailto:chenyutpe@gmail.com" },
-  { icon: FaLinkedin, href: "https://linkedin.com/in/chenyutpe" },
-  { icon: SiGooglescholar, href: "https://scholar.google.com.tw/citations?user=GCgPzX8AAAAJ" },
-  { icon: SiGithub, href: "https://github.com/chenyutpe" },
+  { icon: MdEmail, label: "Email Yu Chen", href: "mailto:chenyutpe@gmail.com" },
+  { icon: FaLinkedin, label: "LinkedIn", href: "https://linkedin.com/in/chenyutpe" },
+  { icon: SiGooglescholar, label: "Google Scholar", href: "https://scholar.google.com.tw/citations?user=GCgPzX8AAAAJ" },
+  { icon: SiGithub, label: "GitHub", href: "https://github.com/chenyutpe" },
 ];
 
 export default function Hero() {
@@ -38,8 +38,8 @@ export default function Hero() {
 
         <div className="flex gap-6 pt-2 justify-center md:justify-start">
           {socials.map((s, i) => (
-            <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" className="social-link">
-              <s.icon size={22} />
+            <a key={i} href={s.href} aria-label={s.label} target="_blank" rel="noopener noreferrer" className="social-link">
+              <s.icon size={22} aria-hidden="true" />
             </a>
           ))}
         </div>

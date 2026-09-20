@@ -4,6 +4,7 @@ import { FileText, Link as LinkIcon } from "lucide-react";
 import { FormatAuthors, AwardBadge, formatDate } from "./academic/ProjectUtils";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animations";
+import PreviewVideo from "./PreviewVideo";
 
 export default function FeaturedWork() {
   return (
@@ -27,7 +28,7 @@ export default function FeaturedWork() {
             {/* MEDIA - Image or Video */}
             <div className="w-full lg:w-[50%] aspect-video relative rounded-2xl overflow-hidden bg-black/5 border border-black/5 dark:border-white/5 shadow-xl shrink-0">
               {p.mediaType === 'video' ? (
-                <video src={p.mediaUrl} autoPlay loop muted playsInline controls className="w-full h-full object-cover" />
+                <PreviewVideo src={p.mediaUrl} label={`Preview of ${p.title}`} controls className="w-full h-full object-cover" />
               ) : (
                 <img src={p.mediaUrl} alt={p.title} className="w-full h-full object-cover" />
               )}

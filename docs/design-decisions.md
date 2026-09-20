@@ -54,10 +54,17 @@ These are role-specific decisions, not instructions to apply opacity suffixes in
 ## Motion and layout
 
 - Existing entrance animations, hover behavior, and theme transitions are part of the visual identity. Preserve them during unrelated styling or structural cleanup.
+- Respect the device's reduced-motion preference: suppress entrance transforms, decorative movement, CSS transitions, and automatic preview-video playback. Keep gentle entrance fades and allow manual playback through featured-video controls. Normal motion remains the default experience.
 - Keep `scrollbar-gutter: stable` on `html` to prevent horizontal content and navbar shifts between pages with different scrolling needs.
 - Existing page layouts and publication presentation are the baseline. Discuss substantial changes before implementing them unless the current task already authorizes them.
 - CV education and experience date ranges stay on one line. Below the `lg` breakpoint, place dates beneath their titles to avoid squeezing them beside long headings.
 - Use `Quant/Qual` in compact CV skill labels; spelling out both terms made the badges unnecessarily tall in the three-column layout.
+
+## Accessible navigation
+
+- Give icon-only links and buttons accessible names without adding visible text beside them.
+- Expose the mobile navigation's expanded state and current-page links. Escape closes the mobile navigation and returns focus to its button.
+- Use a foreground-colored focus outline for keyboard navigation so it remains visible in both themes without changing the green palette.
 
 ## Future directions and open questions
 

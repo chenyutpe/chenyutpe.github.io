@@ -7,6 +7,25 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Foreground stays legible in both themes, including on green controls. */
+:where(a, button, video):focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+
+  :is(a, button) {
+    transform: none !important;
+    scale: none !important;
+  }
+}
+
 @theme {
   --color-cosmic-latte: #FFF8E7;
   --color-cosmic-blue: #000718;
