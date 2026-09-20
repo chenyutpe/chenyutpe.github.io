@@ -1,6 +1,6 @@
 "use client";
 import { featuredWorks } from "@/data/works";
-import { Volume2, FileText, Video, Link as LinkIcon } from "lucide-react";
+import { FileText, Link as LinkIcon } from "lucide-react";
 import { FormatAuthors, AwardBadge, formatDate } from "./academic/ProjectUtils";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animations";
@@ -60,11 +60,6 @@ export default function FeaturedWork() {
                     <FileText size={14} /> DOI
                   </a>
                 )}                
-                {/* {p.videoUrl && (
-                  <a href={p.videoUrl} target="_blank" rel="noopener noreferrer" className="btn-action">
-                    <Video size={14} /> Video
-                  </a>
-                )} */}
                 {p.externalUrl && (
                   <a href={p.externalUrl.url} target="_blank" rel="noopener noreferrer" className="btn-action">
                     <LinkIcon size={14} /> {p.externalUrl.label}

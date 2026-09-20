@@ -46,7 +46,6 @@ export const featuredWorks: WorkItem[] = [
     mediaUrl: "/works/publication_10.mp4",
     mediaType: 'video',
     doi: "10.1145/3772318.3791961",
-    videoUrl: "https://youtube.com/...",
   },
   {
     id: "project_1",
@@ -77,7 +76,6 @@ export const allPublications: PublicationItem[] = [
     mediaUrl: "/works/publication_10.mp4",
     mediaType: 'video',
     doi: "10.1145/3772318.3791961",
-    videoUrl: "https://youtube.com/...",
   },
   {
     id: "publication_09",
