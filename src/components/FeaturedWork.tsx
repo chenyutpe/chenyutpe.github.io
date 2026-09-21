@@ -1,7 +1,7 @@
 "use client";
 import { featuredWorks } from "@/data/works";
 import { FileText, Link as LinkIcon } from "lucide-react";
-import { FormatAuthors, AwardBadge, formatDate } from "./academic/ProjectUtils";
+import { FormatAuthors, AwardBadge } from "./academic/ProjectUtils";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animations";
 import PreviewVideo from "./PreviewVideo";
@@ -13,7 +13,7 @@ export default function FeaturedWork() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="max-w-5xl mx-auto px-8 pb-32"
+      className="max-w-6xl mx-auto px-8 pb-32"
     >
       <motion.h2 
         variants={itemVariants}
@@ -39,12 +39,6 @@ export default function FeaturedWork() {
               <div className="flex flex-wrap items-center gap-3">
                 <span className="text-sm font-bold uppercase tracking-widest theme-text text-organic-strong">{p.type}</span>
                 {p.venue && <span className="theme-text text-sm font-bold">{p.venue}</span>}
-                {/* CONDITIONAL METADATA */}
-                {p.type === 'publication' ? (
-                  ""
-                ) : (
-                  <span className="text-xs theme-text text-foreground/75 italic">{formatDate(p.startDate)} — {formatDate(p.endDate)}</span>
-                )}
                 <AwardBadge type={p.awardType || 'NONE'} />
               </div>
 
@@ -58,7 +52,7 @@ export default function FeaturedWork() {
               <div className="flex flex-wrap gap-3">
                 {p.type === 'publication' && p.doi && (
                   <a href={`https://doi.org/${p.doi}`} target="_blank" rel="noopener noreferrer" className="btn-action">
-                    <FileText size={14} /> DOI
+                    <FileText size={14} /> View publication
                   </a>
                 )}                
                 {p.externalUrl && (

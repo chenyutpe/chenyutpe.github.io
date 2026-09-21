@@ -49,7 +49,7 @@ Choose emphasis according to what the reader needs to notice. Opacity is not a u
 | Coauthors | `text-foreground/60` | Keep attribution visible while preserving the owner's prominence |
 | Homepage introduction and featured-work descriptions | `text-foreground/80` | Support titles without competing with them |
 | CV institutions, organizations, and supporting details | `text-foreground/80` | Maintain readable supporting context |
-| CV dates, featured-project dates, and skill-category labels | `text-foreground/75` | Keep metadata subordinate but legible |
+| CV dates and skill-category labels | `text-foreground/75` | Keep metadata subordinate but legible |
 | Primary titles, inactive navigation, and individual skill names | Full foreground | Preserve clear scanning and navigation |
 | Active navigation | Theme-dependent green | Identify the current page |
 | About biography, including green emphasis | Parent `opacity-80` | Keep emphasis softly integrated with the paragraph |
@@ -59,6 +59,10 @@ Choose emphasis according to what the reader needs to notice. Opacity is not a u
 `text-foreground/80` changes the text color's alpha. Parent `opacity-80` fades the entire group, including colored descendants. About's biography deliberately uses the latter. Do not combine the two for the same text unless the additional fading is intentional.
 
 These are role-specific decisions, not instructions to apply opacity suffixes indiscriminately to new text.
+
+Keep Birdsong of the Island in Featured Works to show creative technology alongside research. Omit project date ranges from homepage featured entries so they focus on the work and its significance; retain dates in the data for future project pages. Label featured publication links "View publication" because the destination provides the publication record and may include supplementary materials, rather than only the paper.
+
+Featured summaries explain the research motivation or the audience interaction and real-world use, drawing on supplied project descriptions. Use `max-w-6xl` (1152 px) for Featured Works, retaining existing font sizes, spacing, and 16:9 media. The wider layout reduces the long research title's wrapping and improves text/video balance without forcing equal heights; mobile entries remain stacked.
 
 Preserve equal-contribution markers in publication author lists, keeping Yu Chen's marker with the emphasized name. Use the symbols without explanatory notes, following the familiar academic convention and keeping the presentation compact. Apply this consistently in featured works and the Publications page.
 
@@ -96,12 +100,4 @@ node -e "require('sharp')('public/social-preview.svg').png().toFile('public/soci
 
 ## Future directions and open questions
 
-These items are not implemented requirements or permission to start work:
-
-- Add a Projects index and individual project pages, initially for the two works currently featured on the homepage.
-- Present project stories through motivation, what was done, results, and, where useful, tools and presentation context. Detailed content still needs to be supplied or verified.
-- Decide how to extend the site beyond research, including whether and how casual interests belong in its professional presentation.
-- Revisit readability of small green labels, especially the widely spaced CV section headings in light mode.
-- Consider clearer color-token names while retaining the distinction between theme-dependent text and fixed decorative or tagline colors.
-
-Keep this section short. Move a direction into the accepted sections when it is decided, and update implementation status when the corresponding work is completed.
+See [website TODOs](TODO.md) for priorities, ongoing work, and deferred ideas. Keep planning there and record accepted decisions and their rationale here. Backlog items do not authorize implementation.
