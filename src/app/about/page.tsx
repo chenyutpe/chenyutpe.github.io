@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-24">
         {/* TEXT SIDE */}
         <motion.div variants={itemVariants} className="md:col-span-3 space-y-6">
-          <h1 className="text-5xl font-bold tracking-tighter">Hi, I&apos;m <span className="text-organic-strong">Yu Chen.</span></h1>
+          <h1 className="text-5xl font-bold tracking-tighter">Hi, I&apos;m <span className="whitespace-nowrap text-organic-strong">Yu Chen.</span></h1>
           <div className="text-lg opacity-80 leading-relaxed space-y-4 font-light">
             <p>
               I am a Master&apos;s graduate in Computer Science from National Taiwan University (CSIE), specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).
@@ -39,10 +39,10 @@ export default function AboutPage() {
       {/* BOTTOM SECTION: THE SLOGAN */}
       <motion.section 
         variants={itemVariants} 
-        className="max-w-3xl mx-auto text-center flex flex-col gap-3 md:gap-4"
+        className="w-full mx-auto text-center flex flex-col gap-3 md:gap-4"
       >
-        <h2 className="text-2xl md:text-3xl font-light text-foreground tracking-tight">
-          My goal is to create <span className="font-semibold text-organic-strong">meaningful and reflective interactions</span>
+        <h2 className="text-2xl md:text-3xl font-light text-foreground tracking-tight text-balance">
+          My goal is to create <span className="inline-block max-w-full font-semibold text-organic-strong">meaningful and reflective interactions</span>
         </h2>
         <p className="text-base md:text-lg font-light text-foreground/80 tracking-wide">
           Experiences that endure despite the rapid cycles of emerging technology.

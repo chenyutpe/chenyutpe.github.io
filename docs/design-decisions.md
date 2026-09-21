@@ -35,6 +35,9 @@ Light-mode green remains low contrast, particularly for small labels. The pale t
 - Use Inter throughout the site for a consistent typeface across devices. Keep existing sizes, weights, spacing, and animations; review wrapping when changing typography.
 - Apply the existing `next/font/google` Inter class to the body. Next.js serves the generated font assets with the static site; the build still needs access to Google Fonts.
 - Use Inter in the sharing image as well for a consistent identity.
+- Use `text-pretty` for publication-list titles to reduce isolated final words while filling the available width naturally; balancing made long titles such as GenTune look too evenly stacked. Keep `text-balance` for the larger featured-work titles. Preserve title wording and font sizes, and keep ordinary body text naturally wrapped.
+- Let About's goal statement use the full existing content width; keep its emphasized phrase together when it fits and balance it when it must wrap. Keep `Yu Chen.` together in the greeting.
+- Scale the Publications page heading from 36 px on phones to 48 px at `sm` and 60 px at `md`, so the unbroken word fits narrow screens without changing its desktop appearance.
 
 ## Text hierarchy
 

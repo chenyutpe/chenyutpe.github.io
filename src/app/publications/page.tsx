@@ -21,7 +21,7 @@ export default function PublicationsPage() {
       className="max-w-4xl mx-auto px-8 pt-10 pb-20"
     >
       <motion.header variants={itemVariants} className="mb-16">
-        <h1 className="text-6xl font-bold tracking-tighter mb-2">Publications</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-2">Publications</h1>
       </motion.header>
 
       <div className="space-y-16">
@@ -74,7 +74,7 @@ export default function PublicationsPage() {
                         </div>
 
                         {/* Title */}
-                        <div className="text-md font-bold leading-tight card-title">
+                        <div className="text-md font-bold leading-tight text-pretty card-title">
                           {pub.title}
                         </div>
 

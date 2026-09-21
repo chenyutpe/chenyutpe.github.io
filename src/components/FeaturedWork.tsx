@@ -48,7 +48,7 @@ export default function FeaturedWork() {
                 <AwardBadge type={p.awardType || 'NONE'} />
               </div>
 
-              <h3 className="text-3xl font-bold tracking-tight">{p.title}</h3>
+              <h3 className="text-3xl font-bold tracking-tight text-balance">{p.title}</h3>
               
               <FormatAuthors authors={p.authors} />
 
