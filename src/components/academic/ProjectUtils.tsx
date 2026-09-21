@@ -7,14 +7,14 @@ interface FormatAuthorsProps {
 }
 
 export const FormatAuthors = ({ authors, textSize = "sm" }: FormatAuthorsProps) => {
-  const parts = authors.split(/(?<!-)(\bYu\sChen\b)/).filter(p => p && p.trim() !== "");
+  const parts = authors.split(/(?<!-)(\bYu\sChen\b[*†‡]?)/).filter(p => p && p.trim() !== "");
 
   return (
     <p className={`text-${textSize} leading-relaxed`}>
       {parts.map((part, i) =>
-        part === "Yu Chen" ? (
+        /^Yu Chen[*†‡]?$/.test(part) ? (
           <strong key={i} className="font-bold theme-text text-foreground tracking-tight">
-            Yu Chen
+            {part}
           </strong>
         ) : (
           <span key={i} className="theme-text text-foreground/60">

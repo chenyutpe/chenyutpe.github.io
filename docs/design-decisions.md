@@ -60,6 +60,8 @@ Choose emphasis according to what the reader needs to notice. Opacity is not a u
 
 These are role-specific decisions, not instructions to apply opacity suffixes indiscriminately to new text.
 
+Preserve equal-contribution markers in publication author lists, keeping Yu Chen's marker with the emphasized name. Use the symbols without explanatory notes, following the familiar academic convention and keeping the presentation compact. Apply this consistently in featured works and the Publications page.
+
 ## Motion and layout
 
 - Existing entrance animations, hover behavior, and theme transitions are part of the visual identity. Preserve them during unrelated styling or structural cleanup.
