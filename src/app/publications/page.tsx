@@ -29,7 +29,7 @@ export default function PublicationsPage() {
           <motion.section key={year} variants={itemVariants} className="flex flex-col md:flex-row gap-6 md:gap-12">
             {/* YEAR SIDEBAR - Increased width slightly for string years */}
             <div className="md:w-28 shrink-0">
-              <h2 className="text-xl md:text-2xl font-bold text-organic-strong sticky top-28">
+              <h2 className="text-xl md:text-2xl font-bold theme-text text-organic-strong sticky top-28">
                 {year}
               </h2>
             </div>

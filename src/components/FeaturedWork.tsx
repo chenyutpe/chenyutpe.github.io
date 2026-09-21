@@ -37,13 +37,13 @@ export default function FeaturedWork() {
             {/* CONTENT */}
             <div className="flex-1 space-y-3">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="text-sm font-bold uppercase tracking-widest text-organic-strong">{p.type}</span>
+                <span className="text-sm font-bold uppercase tracking-widest theme-text text-organic-strong">{p.type}</span>
                 {p.venue && <span className="text-sm font-bold">{p.venue}</span>}
                 {/* CONDITIONAL METADATA */}
                 {p.type === 'publication' ? (
                   ""
                 ) : (
-                  <span className="text-xs text-foreground/75 italic">{formatDate(p.startDate)} — {formatDate(p.endDate)}</span>
+                  <span className="text-xs theme-text text-foreground/75 italic">{formatDate(p.startDate)} — {formatDate(p.endDate)}</span>
                 )}
                 <AwardBadge type={p.awardType || 'NONE'} />
               </div>
@@ -52,7 +52,7 @@ export default function FeaturedWork() {
               
               <FormatAuthors authors={p.authors} />
 
-              <p className="text-base text-foreground/80 font-light leading-relaxed">{p.description}</p>
+              <p className="text-base theme-text text-foreground/80 font-light leading-relaxed">{p.description}</p>
 
               {/* ACTION BUTTONS */}
               <div className="flex flex-wrap gap-3">

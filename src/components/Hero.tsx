@@ -31,7 +31,7 @@ export default function Hero() {
           <p className="text-lg font-medium tracking-widest uppercase text-organic-green">HCI & XR | Creative Technology</p>
         </div>
         
-        <div className="max-w-xl text-sm md:text-base leading-relaxed text-foreground/80 font-light space-y-3">
+        <div className="max-w-xl text-sm md:text-base leading-relaxed theme-text text-foreground/80 font-light space-y-3">
           <p>I am a CS Master&apos;s graduate from National Taiwan University, specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).</p>
           <p>As a meticulous observer and critical thinker, I leverage this sensitivity to identify nuances that others might overlook.</p>
         </div>

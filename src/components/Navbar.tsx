@@ -69,7 +69,7 @@ export default function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-navigation"
             onClick={() => setIsOpen(!isOpen)} 
-            className="p-2 text-foreground hover:text-organic-strong rounded-full hover:bg-black/5 dark:hover:bg-white/10 active:scale-90"
+            className="theme-text p-2 text-foreground hover:text-organic-strong rounded-full hover:bg-black/5 dark:hover:bg-white/10 active:scale-90"
           >
             {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
@@ -97,7 +97,7 @@ export default function Navbar() {
                     href={link.href} 
                     aria-current={isActive ? "page" : undefined}
                     onClick={() => setIsOpen(false)} 
-                    className={`navbar-link text-2xl font-bold tracking-tight transition-colors flex items-center justify-between
+                    className={`navbar-link text-2xl font-bold tracking-tight flex items-center justify-between
                       ${isActive 
                       ? "text-organic-strong opacity-100"
                       : "text-foreground hover:text-organic-strong"

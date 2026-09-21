@@ -63,6 +63,7 @@ These are role-specific decisions, not instructions to apply opacity suffixes in
 ## Motion and layout
 
 - Existing entrance animations, hover behavior, and theme transitions are part of the visual identity. Preserve them during unrelated styling or structural cleanup.
+- Theme-dependent text colors should transition over 500 ms with `ease`. Add `theme-text` to elements that explicitly set their text color and lack a component transition; inherited text already follows its parent's animated color. Keep existing component transitions and reduced-motion overrides rather than applying `transition-all` globally.
 - Respect the device's reduced-motion preference: suppress entrance transforms, decorative movement, CSS transitions, and automatic preview-video playback. Keep gentle entrance fades and allow manual playback through featured-video controls. Normal motion remains the default experience.
 - Keep `scrollbar-gutter: stable` on `html` to prevent horizontal content and navbar shifts between pages with different scrolling needs.
 - Existing page layouts and publication presentation are the baseline. Discuss substantial changes before implementing them unless the current task already authorizes them.

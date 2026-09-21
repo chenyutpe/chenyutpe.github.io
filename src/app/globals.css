@@ -104,6 +104,11 @@ body {
 }
 
 @layer components {
+  /* Explicit text colors do not inherit the body's animated color. */
+  .theme-text {
+    transition: color 500ms ease;
+  }
+
   .navbar-link {
     color: var(--foreground);
 

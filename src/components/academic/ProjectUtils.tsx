@@ -13,11 +13,11 @@ export const FormatAuthors = ({ authors, textSize = "sm" }: FormatAuthorsProps) 
     <p className={`text-${textSize} leading-relaxed`}>
       {parts.map((part, i) =>
         part === "Yu Chen" ? (
-          <strong key={i} className="font-bold text-foreground tracking-tight">
+          <strong key={i} className="font-bold theme-text text-foreground tracking-tight">
             Yu Chen
           </strong>
         ) : (
-          <span key={i} className="text-foreground/60">
+          <span key={i} className="theme-text text-foreground/60">
             {part}
           </span>
         )
@@ -34,7 +34,7 @@ export const AwardBadge = ({ type }: { type: AwardType }) => {
   };
   const { icon: Icon, text, color } = config[type];
   return (
-    <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tight border ${color}`}>
+    <span className={`theme-text inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tight border ${color}`}>
       <Icon size={16} strokeWidth={2.5} /> {text}
     </span>
   );
