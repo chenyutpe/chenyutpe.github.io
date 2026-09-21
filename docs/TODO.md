@@ -10,8 +10,8 @@ This is a planning list, not blanket implementation authorization. Work in small
 
 **Importance:** High. **Effort:** Medium.
 
-- Measure loading before changing behavior, particularly on mobile connections.
-- Review the roughly 5 MB and 6.9 MB publication PNGs for resizing and compression.
+- Still-image baseline, resized WebP derivatives, and local visual/loading checks are complete; see [measurements and maintenance](media-images.md).
+- Measure loading under mobile-network constraints and on the deployed site; local payload savings do not establish real-world load times.
 - Evaluate starting preview playback near the viewport and pausing offscreen videos; preserve reduced-motion behavior and featured-video controls.
 - Verify visual quality, playback, and loading after changes. Keep static export compatible with GitHub Pages.
 

@@ -9,6 +9,8 @@ interface BaseWorkItem {
   description: string;
   mediaUrl: string;
   mediaType: 'image' | 'video';
+  mediaWidth?: number;
+  mediaHeight?: number;
   awardType?: AwardType;
   videoUrl?: string;
   externalUrl?: { label: string; url: string };
@@ -121,8 +123,10 @@ export const allPublications: PublicationItem[] = [
     venue: "MobileHCI '24 Paper",
     authors: "Yu-Cheng Chang, Yen-Pu Wang, Chiao-Ju Chang, Wei Tian Mireille Tan, Yu Lun Hsu, Yu Chen, Mike Y. Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_06.png",
+    mediaUrl: "/images/publication-06-720.webp",
     mediaType: 'image',
+    mediaWidth: 720,
+    mediaHeight: 403,
     doi: "10.1145/3676500"
   },
   {
@@ -134,8 +138,10 @@ export const allPublications: PublicationItem[] = [
     awardType: 'HONORABLE_MENTION',
     authors: "Chiao-Ju Chang, Yu Lun Hsu, Wei Tian Mireille Tan, Yu-Cheng Chang, Pin Chun Lu, Yu Chen, Yi-Han Wang, Mike Y. Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_05.png",
+    mediaUrl: "/images/publication-05-720.webp",
     mediaType: 'image',
+    mediaWidth: 720,
+    mediaHeight: 239,
     doi: "10.1145/3643834.3661538"
   },  
   {
@@ -158,8 +164,8 @@ export const allPublications: PublicationItem[] = [
     venue: "CHI '24 Paper",
     authors: "Shun-Yu Wang, Wei-Chung Su, Serena Chen, Ching-Yi Tsai, Marta Misztal, Katherine M. Cheng, Alwena Lin, Yu Chen, Mike Y. Chen.",
     description: "TBD",
-    mediaUrl: "/works/publication_03.png",
-    mediaType: 'image',
+    mediaUrl: "/works/publication_03.mp4",
+    mediaType: 'video',
     doi: "10.1145/3613904.3642901"
   },
   {

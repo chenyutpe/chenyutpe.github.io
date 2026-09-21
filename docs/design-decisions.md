@@ -76,6 +76,10 @@ Preserve equal-contribution markers in publication author lists, keeping Yu Chen
 - CV education and experience date ranges stay on one line. Below the `lg` breakpoint, place dates beneath their titles to avoid squeezing them beside long headings.
 - Use `Quant/Qual` in compact CV skill labels; spelling out both terms made the badges unnecessarily tall in the three-column layout.
 
+## Media delivery
+
+Serve pre-generated WebP derivatives for the active still images while retaining originals. Keep the homepage portrait prioritized, use responsive sizes for the About photo, and lazy-load publication stills with intrinsic dimensions to reserve their space. Preserve existing crops, transparency, grayscale hover styling, and layout. Generate files with `npm run media:images`; keep Next.js image optimization disabled for GitHub Pages static export. See [image measurements and maintenance](media-images.md) for sizes, verification, and limitations. Video delivery is a separate follow-up.
+
 ## Accessible navigation
 
 - Give icon-only links and buttons accessible names without adding visible text beside them.

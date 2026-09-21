@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { allPublications} from "@/data/works";
 import { FormatAuthors, AwardBadge } from "@/components/academic/ProjectUtils";
 import { containerVariants, itemVariants } from "@/lib/animations";
@@ -58,7 +59,7 @@ export default function PublicationsPage() {
                           {pub.mediaType === 'video' ? (
                             <PreviewVideo src={pub.mediaUrl} label={`Preview of ${pub.title}`} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                           ) : (
-                            <img src={pub.mediaUrl} alt={pub.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                            <Image src={pub.mediaUrl} alt={pub.title} width={pub.mediaWidth} height={pub.mediaHeight} loading="lazy" className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                           )}
                         </div>
                       )}

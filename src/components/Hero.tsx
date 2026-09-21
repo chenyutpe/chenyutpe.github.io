@@ -20,7 +20,7 @@ export default function Hero() {
       <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative w-52 h-52 md:w-70 md:h-70 shrink-0">
         <div className="absolute inset-0 bg-organic-green/20 rounded-full blur-3xl" />
         <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-organic-green/30 shadow-xl">
-          <Image src="/profile.png" alt="Yu Chen" fill className="object-cover" priority />
+          <Image src="/images/profile-560.webp" alt="Yu Chen" fill className="object-cover" priority />
         </div>
       </motion.div>
 
