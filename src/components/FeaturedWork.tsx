@@ -17,7 +17,7 @@ export default function FeaturedWork() {
     >
       <motion.h2 
         variants={itemVariants}
-        className="text-4xl md:text-6xl font-bold tracking-tighter mb-16">
+        className="theme-text text-4xl md:text-6xl font-bold tracking-tighter mb-16">
           Featured Works
       </motion.h2>
 
@@ -38,7 +38,7 @@ export default function FeaturedWork() {
             <div className="flex-1 space-y-3">
               <div className="flex flex-wrap items-center gap-3">
                 <span className="text-sm font-bold uppercase tracking-widest theme-text text-organic-strong">{p.type}</span>
-                {p.venue && <span className="text-sm font-bold">{p.venue}</span>}
+                {p.venue && <span className="theme-text text-sm font-bold">{p.venue}</span>}
                 {/* CONDITIONAL METADATA */}
                 {p.type === 'publication' ? (
                   ""
@@ -48,7 +48,7 @@ export default function FeaturedWork() {
                 <AwardBadge type={p.awardType || 'NONE'} />
               </div>
 
-              <h3 className="text-3xl font-bold tracking-tight text-balance">{p.title}</h3>
+              <h3 className="theme-text text-3xl font-bold tracking-tight text-balance">{p.title}</h3>
               
               <FormatAuthors authors={p.authors} />
 

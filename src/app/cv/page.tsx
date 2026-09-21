@@ -14,7 +14,7 @@ export default function CVPage() {
       {/* HEADER */}
       <motion.header variants={itemVariants} className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-20">
         <div>
-          <h1 className="text-6xl font-bold tracking-tighter mb-2">Curriculum Vitae</h1>
+          <h1 className="theme-text text-6xl font-bold tracking-tighter mb-2">Curriculum Vitae</h1>
         </div>
         {/* <a 
           href="/Yu_Chen_CV.pdf" 
@@ -34,7 +34,7 @@ export default function CVPage() {
             {education.map((edu) => (
               <motion.div key={edu.id} variants={itemVariants} className="group">
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-baseline gap-y-1 gap-x-6 mb-2">
-                  <h3 className="text-2xl font-bold">{edu.degree}</h3>
+                  <h3 className="theme-text text-2xl font-bold">{edu.degree}</h3>
                   <span className="shrink-0 whitespace-nowrap text-sm font-medium theme-text text-foreground/75">{edu.date}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm theme-text text-foreground/80 mb-4">
@@ -64,7 +64,7 @@ export default function CVPage() {
                 <div className="absolute -left-1.25 top-2 w-2.5 h-2.5 rounded-full bg-organic-green shadow-[0_0_10px_rgba(160,212,160,0.5)]" />
                 
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-baseline gap-y-1 gap-x-6 mb-2">
-                  <h3 className="text-xl font-bold">{exp.role}</h3>
+                  <h3 className="theme-text text-xl font-bold">{exp.role}</h3>
                   <span className="shrink-0 whitespace-nowrap text-sm font-medium theme-text text-foreground/75">{exp.date}</span>
                 </div>
                 <div className="text-sm font-semibold theme-text text-foreground/80 mb-4">{exp.company}</div>

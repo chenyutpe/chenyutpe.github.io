@@ -15,14 +15,14 @@ export default function AboutPage() {
       <section className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-24">
         {/* TEXT SIDE */}
         <motion.div variants={itemVariants} className="md:col-span-3 space-y-6">
-          <h1 className="text-5xl font-bold tracking-tighter">Hi, I&apos;m <span className="whitespace-nowrap theme-text text-organic-strong">Yu Chen.</span></h1>
+          <h1 className="text-5xl font-bold tracking-tighter"><span className="theme-text">Hi, I&apos;m </span><span className="whitespace-nowrap theme-text text-organic-strong">Yu Chen.</span></h1>
           <div className="text-lg opacity-80 leading-relaxed space-y-4 font-light">
-            <p>
+            <p className="theme-text">
               I am a Master&apos;s graduate in Computer Science from National Taiwan University (CSIE), specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).
             </p>
             <p>
-              I consider myself a <span className="theme-text text-organic-strong font-bold">meticulous observer</span> and a <span className="theme-text text-organic-strong font-bold">critical thinker</span>. This mindset allows me to identify nuances that others might overlook.
-              With this sensitivity, I contributed to ten publications across top HCI venues (ACM CHI, UIST, DIS, MobileHCI), receiving two Honorable Mentions. Most recently, my debut first-author work was recognized with a  <span className="theme-text text-organic-strong font-bold">Best Paper Award at CHI 2026</span>.
+              <span className="theme-text">I consider myself a </span><span className="theme-text text-organic-strong font-bold">meticulous observer</span><span className="theme-text"> and a </span><span className="theme-text text-organic-strong font-bold">critical thinker</span><span className="theme-text">. This mindset allows me to identify nuances that others might overlook.
+              With this sensitivity, I contributed to ten publications across top HCI venues (ACM CHI, UIST, DIS, MobileHCI), receiving two Honorable Mentions. Most recently, my debut first-author work was recognized with a  </span><span className="theme-text text-organic-strong font-bold">Best Paper Award at CHI 2026</span><span className="theme-text">.</span>
             </p>
           </div>
         </motion.div>
@@ -41,8 +41,8 @@ export default function AboutPage() {
         variants={itemVariants} 
         className="w-full mx-auto text-center flex flex-col gap-3 md:gap-4"
       >
-        <h2 className="text-2xl md:text-3xl font-light theme-text text-foreground tracking-tight text-balance">
-          My goal is to create <span className="inline-block max-w-full font-semibold theme-text text-organic-strong">meaningful and reflective interactions</span>
+        <h2 className="text-2xl md:text-3xl font-light tracking-tight text-balance">
+          <span className="theme-text">My goal is to create </span><span className="inline-block max-w-full font-semibold theme-text text-organic-strong">meaningful and reflective interactions</span>
         </h2>
         <p className="text-base md:text-lg font-light theme-text text-foreground/80 tracking-wide">
           Experiences that endure despite the rapid cycles of emerging technology.

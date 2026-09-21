@@ -21,7 +21,7 @@ export default function PublicationsPage() {
       className="max-w-4xl mx-auto px-8 pt-10 pb-20"
     >
       <motion.header variants={itemVariants} className="mb-16">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-2">Publications</h1>
+        <h1 className="theme-text text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-2">Publications</h1>
       </motion.header>
 
       <div className="space-y-16">
@@ -49,7 +49,7 @@ export default function PublicationsPage() {
                       hover:bg-black/2 dark:hover:bg-white/3
                       hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)]
                       border border-transparent hover:border-black/5 dark:hover:border-white/10
-                      transition-all duration-500"
+                      transition-[background-color,border-color,box-shadow,transform] duration-500"
                   >
                     <div key={pub.id} className="group flex flex-col sm:flex-row gap-6 md:gap-10 items-start">
                       {/* COMPACT MEDIA THUMBNAIL */}
@@ -67,7 +67,7 @@ export default function PublicationsPage() {
                       <div className="card-text flex-1 min-w-0 space-y-1">
                         {/* Venue & Awards */}
                         <div className="flex flex-wrap items-center gap-3 mb-1">
-                          <span className="text-[10px] font-bold tracking-widest">
+                          <span className="theme-text text-[10px] font-bold tracking-widest">
                             {pub.venue}
                           </span>
                           <AwardBadge type={pub.awardType || 'NONE'} />

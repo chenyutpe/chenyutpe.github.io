@@ -28,7 +28,7 @@ export default function Navbar() {
       }
     }} className="fixed top-0 w-full z-50 bg-cosmic-latte/40 dark:bg-cosmic-blue/40 backdrop-blur-xl shadow-sm dark:shadow-2xl border-b border-black/5 dark:border-white/5 theme-transition">
       <div className="flex justify-between items-center h-20 px-8 md:px-24 max-w-6xl mx-auto">
-        <Link href="/" className="text-xl font-bold tracking-tighter">Yu Chen</Link>
+        <Link href="/" className="theme-text text-xl font-bold tracking-tighter">Yu Chen</Link>
 
         {/* Desktop Nav */}
         <nav aria-label="Main navigation" className="hidden md:flex items-center gap-10">

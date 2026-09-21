@@ -27,7 +27,7 @@ export default function Hero() {
       {/* Text Content */}
       <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="flex-1 text-center md:text-left space-y-4">
         <div>
-          <h1 className="text-6xl font-bold tracking-tighter pb-1.5">Yu Chen</h1>
+          <h1 className="theme-text text-6xl font-bold tracking-tighter pb-1.5">Yu Chen</h1>
           <p className="text-lg font-medium tracking-widest uppercase text-organic-green">HCI & XR | Creative Technology</p>
         </div>
         

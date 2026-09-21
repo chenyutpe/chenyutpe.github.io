@@ -88,7 +88,6 @@ html {
 /* Define the transition once as a standard CSS rule */
 .theme-transition {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), 
-              color 500ms cubic-bezier(0.4, 0, 0.2, 1),
               border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),              
               opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
               transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -99,13 +98,13 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  /* This ensures the body transitions */
-  transition: background-color 500ms ease, color 500ms ease;
+  /* Text blocks own their color transitions to avoid nested transition restarts. */
+  transition: background-color 500ms ease;
 }
 
 @layer components {
-  /* Explicit text colors do not inherit the body's animated color. */
   .theme-text {
+    color: var(--foreground);
     transition: color 500ms ease;
   }
 
@@ -168,7 +167,7 @@ body {
   
   .publication-card {
     
-    transition: background-color 500ms ease, color 500ms ease, border-color 500ms ease, transform 300ms ease;
+    transition: background-color 500ms ease, border-color 500ms ease, transform 300ms ease;
     
     &:hover {
       transform: translateX(-0.25rem) translateY(-0.25rem);
@@ -176,7 +175,6 @@ body {
 
     .card-text {
       color: var(--foreground);
-      transition: color 500ms ease;
     }
 
     .card-title {
