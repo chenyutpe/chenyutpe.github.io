@@ -74,6 +74,8 @@ These are role-specific decisions, not instructions to apply opacity suffixes in
 
 ## Page metadata and sharing
 
+- Use a custom `src/app/not-found.tsx` for missing pages so they inherit the site's theme, Inter font, navbar, and glows without the default Next.js 404's device-theme overrides. Center a compact 404 label, clear heading, explanation, and one home link in the space below the navbar.
+
 - Keep site defaults and the metadata helper in `src/lib/metadata.ts`; put each page's title, description, and canonical path in its route layout. Server layouts supply metadata while existing client pages retain their animations.
 - Use `Yu Chen` for the home title and `Page | Yu Chen` for other pages to identify browser tabs and shared links clearly.
 - Share one 1200 × 630 preview image with a cream background (`#FFF8E7`), pale-green and blue glows, dark name and URL, and a green tagline (`#83b06c`). This preserves the warm identity while making the tagline clearer than pale green at thumbnail sizes.
