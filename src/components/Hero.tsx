@@ -33,7 +33,7 @@ export default function Hero() {
         
         <div className="max-w-xl text-sm md:text-base leading-relaxed theme-text text-foreground/80 font-light space-y-3">
           <p>I am a CS Master&apos;s graduate from National Taiwan University, specializing in Human-Computer Interaction (HCI) and Extended Reality (XR).</p>
-          <p>As a meticulous observer and critical thinker, I leverage this sensitivity to identify nuances that others might overlook.</p>
+          <p>I currently work as a Software Engineer at TSMC, exploring a new domain and taking on real-world engineering challenges.</p>
         </div>
 
         <div className="flex gap-6 pt-2 justify-center md:justify-start">

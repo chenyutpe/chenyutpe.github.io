@@ -24,6 +24,9 @@ export default function AboutPage() {
               <span className="theme-text">I consider myself a </span><span className="theme-text text-organic-strong font-bold">meticulous observer</span><span className="theme-text"> and a </span><span className="theme-text text-organic-strong font-bold">critical thinker</span><span className="theme-text">. This mindset allows me to identify nuances that others might overlook.
               With this sensitivity, I contributed to ten publications across top HCI venues (ACM CHI, UIST, DIS, MobileHCI), receiving two Honorable Mentions. Most recently, my debut first-author work was recognized with a  </span><span className="theme-text text-organic-strong font-bold">Best Paper Award at CHI 2026</span><span className="theme-text">.</span>
             </p>
+            <p className="theme-text">
+              I currently work as a Software Engineer at TSMC, exploring a new domain and taking on real-world engineering challenges where reliability, precision, and thoughtful decisions matter.
+            </p>
           </div>
         </motion.div>
 

@@ -24,6 +24,13 @@ export const education = [
 
 export const professionalExperience = [
   {
+    id: 7,
+    role: "Software Engineer",
+    company: "TSMC",
+    date: "Sep 2026 — Present",
+    description: []
+  },
+  {
     id: 6,
     role: "Research Assistant",
     company: "National Taiwan University (HCI Lab)",
